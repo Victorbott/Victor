@@ -2243,7 +2243,7 @@ if (text == 'تعطيل') and not is_sudo(msg) then
 local url , res = http.request('http://tshake.ml/joinch/?id='..msg.sender_user_id_..'')
 data = JSON.decode(url)
 if data.Ch_Member.TshAkE ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @zx_xx ⚜️\n', 1, 'html')   
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @VIP_ES ⚜️\n', 1, 'html')   
 return false end
 function TSby(extra,result,success)
 info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'TSHAKETEAM')..')\n'
@@ -2292,7 +2292,7 @@ if (text == 'تفعيل') and not is_sudo(msg) then
 local url , res = http.request('http://tshake.ml/joinch/?id='..msg.sender_user_id_..'')
 data = JSON.decode(url)
 if data.Ch_Member.TshAkE ~= true then
-send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @zx_xx ⚜️\n', 1, 'html')   
+send(msg.chat_id_, msg.id_, 1,'\n• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• @VIP_ES ⚜️\n', 1, 'html')   
 return false end
 function TSby(extra,result,success)
 info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'TSHAKETEAM')..')\n'
@@ -2884,8 +2884,8 @@ if text == ("تحديث السورس") then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
 os.execute('rm -rf Tshake.lua')
-os.execute('cd libs;wget https://raw.githubusercontent.com/tshakeabas/Tshake/master/libs/utils.lua')
-os.execute('wget https://raw.githubusercontent.com/tshakeabas/Tshake/master/Tshake.lua')
+os.execute('cd libs;wget https://raw.githubusercontent.com/Victorbott/Victor/master/libs/utils.lua')
+os.execute('wget https://raw.githubusercontent.com/Victorbott/Victor/master/Tshake.lua')
 dofile('Tshake.lua')  
 return false
 end
@@ -5094,7 +5094,7 @@ send(msg.chat_id_, msg.id_, 1,[[*
 🚸| ارسل امر (امثله) لبدء لعبه
 🚸| ارسل امر (المختلف) لبدء لعبه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-Ch  ☰ *[@zx_xx] 🃏
+Ch  ☰ *[@VIP_ES] 🃏
 ]], 1, 'md')
 database:set('tshake:'..bot_id..'lock_geam'..msg.chat_id_,true)  
 end
@@ -8544,7 +8544,7 @@ local text =  [[
 🎖┇م4 ~⪼ لعرض اوامر المطورين
 🔖┇ اوامر التقيد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-‏📡┇Ch ~⪼ @Zx_xx
+‏📡┇Ch ~⪼ @VIP_ES
 ]]
 send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'html')
 end
@@ -8585,7 +8585,7 @@ local text =  [[
 🔐┇الكلايش
 🔐┇الدخول
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @Zx_xx
+📡┇Ch ~⪼ @VIP_ES
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
@@ -8650,7 +8650,7 @@ local text =  [[
 📮┇الاوامر الاضافيه 
 📮┇مسح الاوامر المضافه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @Zx_xx
+📡┇Ch ~⪼ @VIP_ES
 ]]
 send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'html')
 end
@@ -8703,7 +8703,7 @@ local text =  [[
 🚸┇تفعيل/تعطيل الطرد/الحظر
 💭┇اضف/حذف امر + اسم الامر
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @ZX_XX
+📡┇Ch ~⪼ @VIP_ES
 ]]
 send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'html')
 end
@@ -8741,7 +8741,7 @@ local text =[[
 🚹┇المقيدين
 🚹┇مسح المقيدين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @TshakeTeam
+📡┇Ch ~⪼ @VIP_ES
 ]]
 send(msg.chat_id_, msg.id_, 1, (hres or text), 1, 'md')
 end
@@ -8810,26 +8810,26 @@ local text =  [[
 🗯┇فحص البوت
 🗯┇تغير اسم البوت
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-‏📡┇Ch ~⪼ @ZX_XX
+‏📡┇Ch ~⪼ @VIP_ES
 ]]
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
 end
 ------------------------------------------------------------------------
 if text == ("اصدار") or text == ("الاصدار") or text == ("السورس") or text == ("سورس") then
 local text =  [[
-👋┇اهلا بك في سورس تشاكي 
+👋┇اهلا بك في سورس Victor 
 
-🌐┇TshAkE TEAM
+🌐┇Victor TEAM
 
-🦁┇[قناه السورس](t.me/ZX_XX)
+🦁┇[قناه السورس](t.me/VIP_ES)
 
-📜┇[قناه شروحات سورس](http://t.me/TSHAKETEAM)
+📜┇[قناه شروحات سورس](http://t.me/VIP_ES)
 
-📥┇[قناه ملفات السورس](t.me/TSHAKETEAM)
+📥┇[قناه ملفات السورس](t.me/VIP_ES)
 
-🔎┇[طريقه التنصيب](https://t.me/ZX_XX/648)
+🔎┇[طريقه التنصيب](https://t.me/VIP_ES/648)
 
-📮┇[لـ تواصل](t.me/A_5bot)
+📮┇[لـ تواصل](t.me/qqqaq)
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'md')
 end
