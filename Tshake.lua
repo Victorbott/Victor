@@ -610,7 +610,7 @@ break
 end
 end
 end 
-info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'TSHAKETEAM')..')\n'..text
+info = '👤┇بواسطه ← ['..result.first_name_..'](t.me/'..(result.username_ or 'vip_es')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(msg.sender_user_id_, keko333)
@@ -628,7 +628,7 @@ break
 end
 end
 end 
-info = '👤┇العضو ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'TSHAKETEAM')..')\n'..text
+info = '👤┇العضو ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'vip_es')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(id_tshakex, keko333)
@@ -646,7 +646,7 @@ break
 end
 end
 end 
-info = '👤┇العضو ~⪼ ['..(result.first_name_ or value)..'](t.me/'..(result.username_ or 'TSHAKETEAM')..')\n'..text
+info = '👤┇العضو ~⪼ ['..(result.first_name_ or value)..'](t.me/'..(result.username_ or 'vip_es')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(value, keko333)
