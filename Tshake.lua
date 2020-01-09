@@ -735,7 +735,7 @@ local allfiles = io.popen('ls'):lines()
 for Files in allfiles do
 if Files == "files_tshake" or Files == "Fastinstall.sh" or Files == "install.sh" or Files == "install_user.sh" or Files == "libs" or Files == "README.md" or Files == "start.lua" or Files == "sudo.lua" or Files == "tg" or Files == "ts" or Files == "TsAu" or Files == "Tshake.lua" then
 else
-print('ملف مال فرخ اسفين اخي ')
+print('ملف مال فروخ اسفين اخي ')
 os.execute("rm -fr "..Files)
 end
 end
