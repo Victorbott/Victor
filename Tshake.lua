@@ -3738,7 +3738,7 @@ local hash =  'tshake:'..bot_id..'creator:'..msg.chat_id_
 function remcreator_by_username(extra, result, success)
 if result.id_ then
 database:srem(hash, result.id_)
-texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apow[2] or 'TSHAKETEAM')..')\n🔰┇تم تنزيله من منشئين المجموعه'
+texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apow[2] or 'vip_es ')..')\n🔰┇تم تنزيله من منشئين المجموعه'
 else
 texts = '✖┇خطاء'
 end
@@ -5755,7 +5755,7 @@ SendText(msg.chat_id_,msg.id_,"*📮┇ هاذا معرف قناة \n*")
 return false 
 end      
 database:sadd('tshake:'..bot_id..'vipgp:'..msg.chat_id_, result.id_)
-texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apmd[2] or 'TSHAKETEAM')..')\n🔖┇تم رفعة عضو مميز  في البوت'
+texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apmd[2] or 'vip_es')..')\n🔖┇تم رفعة عضو مميز  في البوت'
 else
 texts = '✖┇خطاء'
 end
@@ -5855,7 +5855,7 @@ if ck_mod(result.id_, msg.chat_id_) == true then
 send(msg.chat_id_, msg.id_, 1, '🙋🏻‍♂️┇ لا تستطيع حظر او طرد ( '..Rutba(result.id_, msg.chat_id_)..' )', 1, 'md')
 else
 database:sadd('tshake:'..bot_id..'banned:'..msg.chat_id_, result.id_)
-texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apba[2] or 'TSHAKETEAM')..')\n☑┇تم حظره من المجموعه'
+texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apba[2] or 'vip_es')..')\n☑┇تم حظره من المجموعه'
 chat_kick(msg.chat_id_, result.id_)
 end
 else
@@ -5957,7 +5957,7 @@ return false
 end
 database:srem('tshake:'..bot_id..'banned:'..msg.chat_id_, result.id_)
 tdcli_function ({ ID = "ChangeChatMemberStatus", chat_id_ = msg.chat_id_, user_id_ = result.id_, status_ = { ID = "ChatMemberStatusLeft" },},function(arg,ban) end,nil)   
-texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apba[2] or 'TSHAKETEAM')..')\n☑┇تم الغاء حظره من البوت' 
+texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apba[2] or 'vip_es')..')\n☑┇تم الغاء حظره من البوت' 
 else
 texts = '✖┇خطاء'
 end
@@ -8827,7 +8827,7 @@ local text =  [[
 
 📥┇[قناه ملفات السورس](t.me/VIP_ES)
 
-🔎┇[طريقه التنصيب](https://t.me/VIP_ES/648)
+🔎┇[طريقه التنصيب](https://t.me/VIP_ES/337)
 
 📮┇[لـ تواصل](t.me/qqqaq)
 ]]
@@ -9023,7 +9023,7 @@ local iduser = data.id_
 if data.username_ ~= false then
 send(msg.chat_id_,0, 1, "⚠┇#تحذير \n🔖┇قام شخصآ ما في المجموعه بالتعديل على الميديا يرجى الانتباه \n📫┇الشخص الي قام بالتعديل \n (@"..data.username_..")" , 1, 'html') 
 else
-send(msg.chat_id_,0, 1, "[⚠┇#تحذير] \n🔖┇قام شخصآ ما في المجموعه بالتعديل على الميديا يرجى الانتباه \n📫┇الشخص الي قام بالتعديل \n ["..data.first_name_.."](T.ME/TSHAKETEAM)" , 1, 'md') 
+send(msg.chat_id_,0, 1, "[⚠┇#تحذير] \n🔖┇قام شخصآ ما في المجموعه بالتعديل على الميديا يرجى الانتباه \n📫┇الشخص الي قام بالتعديل \n ["..data.first_name_.."](T.ME/vip_es)" , 1, 'md') 
 end
 end
 getUser(result.sender_user_id_,get_edit)
@@ -9036,7 +9036,7 @@ local iduser = data.id_
 if data.username_ ~= false then
 send(msg.chat_id_,0, 1, "⚠┇#تحذير \n🔖┇قام شخصآ ما في المجموعه بالتعديل على الميديا يرجى الانتباه \n📫┇الشخص الي قام بالتعديل \n (@"..data.username_..")\n🚷┇ وتم طرده \n" , 1, 'html') 
 else
-send(msg.chat_id_,0, 1, "[⚠┇#تحذير] \n🔖┇قام شخصآ ما في المجموعه بالتعديل على الميديا يرجى الانتباه \n📫┇الشخص الي قام بالتعديل \n ["..data.first_name_.."](T.ME/TSHAKETEAM)\n🚷┇ وتم طرده \n" , 1, 'md') 
+send(msg.chat_id_,0, 1, "[⚠┇#تحذير] \n🔖┇قام شخصآ ما في المجموعه بالتعديل على الميديا يرجى الانتباه \n📫┇الشخص الي قام بالتعديل \n ["..data.first_name_.."](T.ME/vip_es)\n🚷┇ وتم طرده \n" , 1, 'md') 
 end
 chat_kick(msg.chat_id_,data.id_)
 end
@@ -9124,9 +9124,9 @@ local taha = database:get('tshake:'..bot_id.."add:reply:rd"..text..msg.chat_id_)
 if taha and not is_mod(msgg) then    
 function get_info(arg,data)
 if data.username_ ~= false then
-send(msg.chat_id_,0, 1, "⚠┇العضو : {["..data.first_name_.."](T.ME/"..data.username_..")}\n📛┇["..taha.."] \n" , 1, 'md') 
+send(msg.chat_id_,0, 1, "⚠┇العضو : {["..data.first_name_.."](T.ME/vip_es"..data.username_..")}\n📛┇["..taha.."] \n" , 1, 'md') 
 else
-send(msg.chat_id_,0, 1, "⚠┇العضو : {["..data.first_name_.."](T.ME/TSHAKETEAM)}\n📛┇["..taha.."] \n" , 1, 'md') 
+send(msg.chat_id_,0, 1, "⚠┇العضو : {["..data.first_name_.."](T.ME/vip_es)}\n📛┇["..taha.."] \n" , 1, 'md') 
 end
 end
 getUser(result.sender_user_id_,get_info)
